@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hashics="http://schemas.android.com/apk/res/com.hashics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_grey_1"
+    tools:context="com.hashics.FullscreenActivity" >
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_content"
+        style="?metaButtonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/custom_grey_1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent" >
+
+        <com.hashics.customviews.TextViewCustom
+            android:id="@+id/txt_view_hash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_hash_margin_top"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="@string/strv_hash"
+            android:textColor="@color/custom_green_1"
+            android:textSize="@dimen/txt_size_100"
+            hashics:customFont="fonts/OpenSans-ExtraBold.ttf" />
+
+        <com.hashics.customviews.TextViewCustom
+            android:id="@+id/txt_view_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_view_hash"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/strv_app_desc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_15"
+            hashics:customFont="fonts/OpenSans-ExtraBold.ttf" />
+
+        <com.facebook.widget.LoginButton
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_view_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:paddingLeft="@dimen/button_padding_20"
+            android:paddingRight="@dimen/button_padding_20"
+            android:textColor="@drawable/btn_green_textcolor"
+            android:textSize="@dimen/txt_size_15"
+            fb:login_text="@string/strv_login"
+            fb:logout_text="@string/strv_logout" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="with Facebook"
+            android:textColor="@color/custom_grey_2"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</FrameLayout>

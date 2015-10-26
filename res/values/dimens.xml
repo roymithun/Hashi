@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dp values -->
+    <dimen name="login_hash_margin_top">50dp</dimen>
+    <dimen name="button_padding_20">20dp</dimen>
+    <dimen name="padding_top_15">15dp</dimen>
+    <dimen name="padding_bottom_15">15dp</dimen>
+    <dimen name="padding_left_30">30dp</dimen>
+    <dimen name="padding_right_30">30dp</dimen>
+    <dimen name="padding_left_40">40dp</dimen>
+    <dimen name="padding_right_40">40dp</dimen>
+    <dimen name="layout_padding_60">60dp</dimen>
+    <dimen name="layout_height_40">40dp</dimen>
+    <dimen name="layout_height_60">60dp</dimen>
+    <dimen name="border_margin_1">1dp</dimen>
+    <dimen name="margin_left_10">10dp</dimen>
+    <dimen name="margin_right_10">10dp</dimen>
+    <dimen name="margin_left_20">20dp</dimen>
+    <dimen name="margin_right_20">20dp</dimen>
+    <dimen name="margin_left_15">15dp</dimen>
+    <dimen name="margin_right_15">15dp</dimen>
+    <dimen name="vertical_partition_1">1dp</dimen>
+    <dimen name="vertical_partition_height">20dp</dimen>
+    <dimen name="img_album_size">120dp</dimen>
+
+    <!-- sp values -->
+    <dimen name="txt_size_100">100sp</dimen>
+    <dimen name="txt_size_15">15sp</dimen>
+
+</resources>

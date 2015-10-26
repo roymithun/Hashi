@@ -1,0 +1,7 @@
+<resources>
+
+	<color name="custom_grey_1">#333333</color>
+	<color name="custom_grey_2">#808080</color>
+	<color name="custom_green_1">#26A65B</color>	
+	<color name="white">#ffffff</color>
+</resources>

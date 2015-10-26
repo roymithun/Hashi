@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="strv_app_name">Hashics</string>
+    <string name="facebook_app_id">696541817127972</string>
+    <string name="strv_hash">#</string>
+    <string name="strv_app_desc">A COMMON PLACE FOR\nPICTURES\nCLICKED TOGETHER</string>
+    <string name="strv_login">Login or SignUp</string>
+    <string name="strv_logout">Logout</string>
+    <string name="strv_name">Name</string>
+    <string name="strv_public">Public</string>
+    <string name="strv_private">Private</string>
+    <string name="strv_publish">Publish</string>
+    <string name="strv_new_shared_album">New Shared Album</string>
+    <string name="strv_pick_frnds_note">Note: You can also pick un-registered friends. We will send them a SMS invite to join the app.</string>
+
+</resources>

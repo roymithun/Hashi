@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/navigation_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/custom_grey_1" >
+
+        <GridView
+            android:id="@+id/grid_view_album"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_view_invite_frnds_add_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_invite_frnds_add_pics" />
+
+        <RelativeLayout
+            android:id="@+id/left_bottom_btn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left" >
+
+            <view
+                android:id="@+id/btn_add_pictures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                class="com.hashics.customviews.PassThroughButton"
+                android:background="@drawable/img_btn_add_pictures" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

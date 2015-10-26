@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBaseBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="3" >
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_1"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_2"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_3"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_4"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_5"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_6"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_7"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_8"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_9"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_10"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_11"
+            style="@style/GridImage" />
+
+        <com.parse.ParseImageView
+            android:id="@+id/parse_img_view_12"
+            style="@style/GridImage" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/img_view_albumtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:gravity="left|center_vertical"
+        android:text="nh7"
+        android:textColor="@android:color/white"
+        android:background="@drawable/album_tag_public" />
+
+</FrameLayout>

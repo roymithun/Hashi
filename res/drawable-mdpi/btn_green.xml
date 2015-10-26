@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: order is important (the first matching state(s) is what is rendered) -->
+    <item android:drawable="@drawable/btn_green_border_s" android:state_selected="true"/>
+    <item android:drawable="@drawable/btn_green_border_s" android:state_focused="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/btn_green_border_s" android:state_focused="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_green_border_s" android:state_focused="false" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_green_border_u"/>
+
+</selector>

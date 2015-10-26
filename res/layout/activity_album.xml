@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBaseBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.AlbumsView" >
+
+    <ListView
+        android:id="@+id/list_view_albums"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/right_top_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end" >
+
+        <view
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.hashics.customviews.PassThroughButton"
+            android:background="@drawable/img_btn_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_bottom_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left" >
+
+        <view
+            android:id="@+id/btn_add_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.hashics.customviews.PassThroughButton"
+            android:background="@drawable/img_btn_add_album" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/black"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/img_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding_left_30"
+            android:background="@drawable/img_btn_back_arrow"
+            android:onClick="onBack" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/strv_new_shared_album"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        style="@style/ActivityBaseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_40"
+        android:paddingRight="@dimen/padding_right_40"
+        android:paddingTop="@dimen/layout_padding_60" >
+
+        <TextView
+            android:id="@+id/txt_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strv_name"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_40"
+            android:background="@color/custom_grey_2" >
+
+            <LinearLayout
+                style="@style/ActivityBaseBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/border_margin_1" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:layout_marginRight="@dimen/margin_right_10"
+                    android:gravity="center"
+                    android:text="@string/strv_hash"
+                    android:textColor="@color/custom_grey_2" />
+
+                <View
+                    android:layout_width="@dimen/vertical_partition_1"
+                    android:layout_height="@dimen/vertical_partition_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/custom_grey_2" />
+
+                <EditText
+                    android:id="@+id/edit_txt_album_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left_10"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:text="134456F"
+                    android:textColor="@android:color/white" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_grp_album_mode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_40"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_mode_public"
+                style="@style/RadioButtonCustom"
+                android:text="@string/strv_public" />
+
+            <RadioButton
+                android:id="@+id/radio_mode_private"
+                style="@style/RadioButtonCustom"
+                android:checked="true"
+                android:text="@string/strv_private" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_publish"
+            style="@style/BtnGreen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_60"
+            android:layout_marginTop="25dp"
+            android:onClick="onPublish"
+            android:text="@string/strv_publish" />
+    </LinearLayout>
+
+</LinearLayout>
